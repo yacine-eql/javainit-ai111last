@@ -18,6 +18,7 @@ public class Dog {
 
     }
 
+    // Constructeur surchargé
     public Dog(String name, int age, float size, float weight, Toy toy) {
         this.name = name;
         this.age = age;
