@@ -68,6 +68,28 @@ public class DemoString {
 
         System.out.println("\n\r### Comparaisons entre deux chaînes identiques ###");
 
+        System.out.println("\r\n*** Entre deux litéraux ***");
+        String a = "toto";
+        String b = "toto";
+        System.out.println("--- Objet ---");
+        System.out.println(a == b);
+        System.out.println("--- Contenu ---");
+        System.out.println(a.equals(b));
 
+        System.out.println("\r\n*** Entre deux objets construits ***");
+        String c = new String("toto");
+        String d = new String("toto");
+        System.out.println("--- Objet ---");
+        System.out.println(c == d);
+        System.out.println("--- Contenu ---");
+        System.out.println(c.equals(d));
+
+        System.out.println("\r\n*** Entre un litéral et un objets construit ***");
+        String e = new String("toto");
+        String f = "toto";
+        System.out.println("--- Objet ---");
+        System.out.println(e == f);
+        System.out.println("--- Contenu ---");
+        System.out.println(e.equals(f));
     }
 }
