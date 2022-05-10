@@ -1,5 +1,7 @@
 package fr.eql.ai111.java.init.demo.oop;
 
+import fr.eql.ai111.java.init.demo.enums.DogBreed;
+
 public class Dog {
 
     // Attributs (variables d'instance)
@@ -7,7 +9,13 @@ public class Dog {
     private int age;
     private float size;
     private float weight;
+    private DogBreed breed;
     private Toy toy;
+    /*
+    Cet attribut est final.
+    Il doit être assigné au plus tard au moment de la construction.
+     */
+    private final int registrationNumber;
 
     // Constructeurs
     // En l'absence de déclaration d'un constructeur, il y aura par défaut un constructeur
@@ -15,31 +23,19 @@ public class Dog {
     // Par contre, si un constructeur surchargé est déclaré, il faut déclarer (si besoin) un
     // constructeur vide.
     public Dog() {
-
+        // On doit assigner ici une valeur à cet attribut final
+        registrationNumber = 0;
     }
 
     // Constructeur surchargé
-    public Dog(String name, int age, float size, float weight, Toy toy) {
+    public Dog(String name, int age, float size, float weight, DogBreed breed, Toy toy, int registrationNumber) {
         this.name = name;
         this.age = age;
         this.size = size;
         this.weight = weight;
+        this.breed = breed;
         this.toy = toy;
-    }
-
-    public Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    public Dog(int age, float size) {
-        this.age = age;
-        this.size = size;
-    }
-
-    public Dog(float weight, int age) {
-        this.age = age;
-        this.weight = weight;
+        this.registrationNumber = registrationNumber;
     }
 
     // Méthodes
@@ -88,14 +84,14 @@ public class Dog {
         this.toy = toy;
     }
 
-    @Override
-    public String toString() {
-        return "Dog{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", size=" + size +
-                ", weight=" + weight +
-                ", toy=" + toy +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Dog{" +
+//                "name='" + name + '\'' +
+//                ", age=" + age +
+//                ", size=" + size +
+//                ", weight=" + weight +
+//                ", toy=" + toy +
+//                '}';
+//    }
 }

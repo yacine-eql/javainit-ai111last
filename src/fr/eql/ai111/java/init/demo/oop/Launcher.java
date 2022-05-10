@@ -1,5 +1,7 @@
 package fr.eql.ai111.java.init.demo.oop;
 
+import fr.eql.ai111.java.init.demo.enums.DogBreed;
+
 public class Launcher {
 
     public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class Launcher {
         Dog dog1 = new Dog();
         Toy dog2Toy = new Toy("Baballe");
         // Instanciation d'un objet avec constructeur surchargé
-        Dog dog2 = new Dog("Fido", 8, 100, 30, dog2Toy);
+        Dog dog2 = new Dog("Fido", 8, 100, 30, DogBreed.BERGER, dog2Toy, 1234);
 
         // Affectation des attributs
         dog1.setName("Laika");
