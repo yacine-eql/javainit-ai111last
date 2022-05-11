@@ -58,8 +58,8 @@ public class DemoArrayList {
         }
 
         System.out.println("\r\n*** Vider la liste ***");
-        toys.removeAll(toys);
-        //toys = new ArrayList<>();
+        //toys.removeAll(toys);
+        toys = new ArrayList<>();
         if (toys.isEmpty()) {
             System.out.println("La liste de jouets est vide");
         }

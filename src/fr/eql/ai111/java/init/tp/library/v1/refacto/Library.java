@@ -78,6 +78,8 @@ public class Library {
             int isbn = Integer.parseInt(JOptionPane.showInputDialog("ISBN du livre"));
             Category category = Category.valueOf(choice.toUpperCase());
             Book book = new Book(title, author, isbn, category);
+            // On récupère la liste (le contenant, avec le getter)
+            // du reader pour en changer le contenu (avec .add())
             reader.getBooks().add(book);
         }
     }
