@@ -2,9 +2,7 @@ package fr.eql.ai111.java.init.demo.collection;
 
 import fr.eql.ai111.java.init.demo.oop.Toy;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class DemoHashSet {

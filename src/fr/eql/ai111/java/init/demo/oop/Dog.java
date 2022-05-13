@@ -2,6 +2,8 @@ package fr.eql.ai111.java.init.demo.oop;
 
 import fr.eql.ai111.java.init.demo.enums.DogBreed;
 
+import java.util.Objects;
+
 public class Dog {
 
     // Attributs (variables d'instance)
@@ -84,7 +86,20 @@ public class Dog {
         this.toy = toy;
     }
 
-//    @Override
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Dog dog = (Dog) o;
+        return registrationNumber == dog.registrationNumber;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(registrationNumber);
+    }
+
+    //    @Override
 //    public String toString() {
 //        return "Dog{" +
 //                "name='" + name + '\'' +

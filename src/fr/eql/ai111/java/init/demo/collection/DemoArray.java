@@ -7,6 +7,8 @@ public class DemoArray {
         // Initialisation et peuplement d'un tableau à une dimension
         String[] seasons = {"Printemps", "Eté", "Automne", "Hiver"};
 
+
+
         System.out.println("*** Lecture du 3ème élément du tableau ***");
         System.out.println(seasons[2]);
 
