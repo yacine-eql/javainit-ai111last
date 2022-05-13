@@ -105,6 +105,12 @@ public class Launcher {
         Animal racoon = new Racoon("Rocky", 5, 50, 10, null, 0);
         animals.add(racoon);
 
+        Animal monkey = new Monkey("Saru", 15, 80, 20, null, 464135);
+        animals.add(monkey);
+        Monkey saru = (Monkey) monkey;
+        saru.hideItem("kiwi");
+        saru.standUp();
+
         AnimalParade parade = new AnimalParade();
         parade.parade(animals);
     }
