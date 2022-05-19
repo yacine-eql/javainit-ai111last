@@ -2,6 +2,7 @@ package fr.eql.ai111.java.init.demo.keyword;
 
 import fr.eql.ai111.java.init.demo.enums.DogBreed;
 import fr.eql.ai111.java.init.demo.oop.Dog;
+import fr.eql.ai111.java.init.demo.oop.Toy;
 
 public class DemoFinal {
 
@@ -16,7 +17,7 @@ public class DemoFinal {
         final int number;
         number = 0;
         final Dog milou;
-        milou = new Dog("Milou", 12, 100, 30, DogBreed.FOX_TERRIER, null, 4567);
+        milou = new Dog("Milou", 12, 100, 30, DogBreed.FOX_TERRIER, new Toy("toto"), 4567);
 
         // On ne peut pas assigner une nouvelle valeur à une variable de type primitif
         //number = 1;

@@ -3,6 +3,7 @@ package fr.eql.ai111.java.init.demo.oop;
 import fr.eql.ai111.java.init.demo.enums.DogBreed;
 
 import java.util.Objects;
+import java.util.Set;
 
 public class Dog {
 
@@ -13,6 +14,7 @@ public class Dog {
     private float weight;
     private DogBreed breed;
     private Toy toy;
+    private Set<Toy> toys;
     /*
     Cet attribut est final.
     Il doit être assigné au plus tard au moment de la construction.
@@ -37,6 +39,16 @@ public class Dog {
         this.weight = weight;
         this.breed = breed;
         this.toy = toy;
+        this.registrationNumber = registrationNumber;
+    }
+
+    public Dog(String name, int age, float size, float weight, DogBreed breed, Set<Toy> toys, int registrationNumber) {
+        this.name = name;
+        this.age = age;
+        this.size = size;
+        this.weight = weight;
+        this.breed = breed;
+        this.toys = toys;
         this.registrationNumber = registrationNumber;
     }
 
